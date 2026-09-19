@@ -1,0 +1,40 @@
+{
+  "provider": "openrouter",
+  "model": "",
+  "providers": {
+    "openrouter": {
+      "model": "anthropic/claude-sonnet-4",
+      "baseUrl": "https://openrouter.ai/api/v1"
+    },
+    "gemini": {
+      "model": "gemini-2.5-flash"
+    },
+    "ollama": {
+      "model": "qwen2.5-coder:7b",
+      "baseUrl": "http://localhost:11434/v1"
+    }
+  },
+  "temperature": 0.3,
+  "maxTokens": 4096,
+  "maxIterations": 15,
+  "contextLines": 250,
+  "maxHistoryMessages": 200,
+  "maxHistoryChars": 200000,
+  "security": {
+    "default": "allow",
+    "read": "allow",
+    "write": "ask",
+    "execute": "ask"
+  },
+  "ignore": [
+    "node_modules",
+    ".git",
+    "dist",
+    "build",
+    ".next",
+    ".venv",
+    "coverage",
+    ".cache",
+    "out"
+  ]
+}
